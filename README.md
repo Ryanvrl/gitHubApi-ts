@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+# GitHub API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descrição
+   - Esse é um projeto de busca de usuários pela API do Git Hub usando REACT e typescript, single-page application (SPA). 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
+- Um input para procurar o usuário.
+- Ao clicar no botão apresenta os repositórios.
 
-## Expanding the ESLint configuration
+## Tecnologias
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React Router: Usada para facilitar a navegação dentro da aplicação.
+- Git Hub API: Usada para buscar os dados dos usuários.
 
-- Configure the top-level `parserOptions` property like this:
+## Gifs
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+###  Navegação
+<img src="./src/images/gifgithub-api.gif" alt="gif ">
+
+## Como utilizar
+
+### clone do projeto
+```
+    git clone https://github.com/Ryanvrl/gitHubApi-ts.git
+```
+### Acessar a pasta
+```
+    cd "projeto"
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Instalação
+```
+    npm install
+```
+
+### Começar
+```
+    npm start
+```
+

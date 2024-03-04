@@ -5,7 +5,11 @@ import classes from "./App.module.css"
 function App() {
   return (
     <div className={classes.app}>
-      <h1>Github Finder</h1>
+      <h1>
+        <a href="/">
+          Github
+        </a>
+      </h1>
       <Outlet />
     </div>
   )
