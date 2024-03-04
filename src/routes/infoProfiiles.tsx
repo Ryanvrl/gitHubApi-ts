@@ -13,10 +13,11 @@ const InfoProfiles = () => {
     }, [])
 
     const getRepos = async (userName: string | undefined) => {
+        setError(null)
         const response = await fetch(`https://api.github.com/users/${userName}/repos?per_page=10`)
             .then(res => {
                 if (res.ok == false) {
-                    throw Error('Erro no fetch')
+                    throw Error('Ocorreu um erro no fetch')
                 }
                 return res.json()
             })
@@ -28,11 +29,10 @@ const InfoProfiles = () => {
         setRepos(response)
     }
 
-    console.log(repos);
-
     return (
         <div className={classes.container}>
-            {repos
+            {error && <div className={classes.error}>{error}</div>}
+            {!error && repos
                 .map((repo: ReposProps) => <a href={repo.html_url} target="_blank" key={repo.id}>{repo.name}
                     <div className={classes.stats}>
                         <span>👀{repo.watchers_count}</span>
