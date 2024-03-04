@@ -1,0 +1,31 @@
+.container {
+    background-color: #2b3566;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.container a {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 5px;
+    background-color: #0e1129;
+    border-radius: 5px;
+}
+
+.container a:hover {
+    background-color: #fff;
+    color: #0e1129;
+}
+
+.container span {
+    background-color: #2b3566;
+    display: inline-block;
+    margin: 2px;
+    padding: 1px;
+    border-radius: 3px;
+}
+
+.stats {
+    margin-top: 5px;
+}
